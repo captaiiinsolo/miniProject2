@@ -13,8 +13,8 @@
         <h1>CSS Snippet Cheatsheet</h1>
     </header>
 
-    <section>
-        <p>Ever have trouble recalling the exact syntax for your favorite CSS code?
+    <section class="headerCapContainer">
+        <p class="headerCaption">Ever have trouble recalling the exact syntax for your favorite CSS code?
             Give it a permanent home and add it to this page!
             Select any snippet below and it'll automatically select all of the code for you to copy.
         </p>
@@ -23,87 +23,99 @@
     <main>
         <section id="row1">
             <article class="row-1 card-1">
-                <h2>Flexbox Row</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, alias. Doloremque cum vel dicta nulla possimus, odit, qui ab quas voluptate non alias et quo voluptatibus earum nisi, nihil optio.</p>
-                <pre>
-                    .row &#123; 
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap:
+                <h2 class="cardHeader">Flexbox Row</h2>
+                <p>Use these three properties to create a Flexbox row layout.</p>
+                <div class="codeSnip">
+                    <pre>
+                        .row &#123; 
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap:
 
-                        &#125;
-                </pre>
+                            &#125;
+                    </pre>
+                </div>    
             </article>
 
             <article class="row-1 card-2">
-                <h2>Flexbox Column</h2>
+                <h2 class="cardHeader">Flexbox Column</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, alias. Aspernatur explicabo voluptatem ut eos non, voluptatibus at nobis quia ab, doloribus atque, earum sapiente deleniti suscipit eligendi cupiditate dolorum?</p>
-                <pre>
-                    .column &#123;
-                        display: flex;
-                        flex-direction: column;
-
-                        &#125;
-                </pre>
+                <div class="codeSnip">
+                    <pre class="codeSnip">
+                        .column &#123;
+                            display: flex;
+                            flex-direction: column;
+    
+                            &#125;
+                    </pre>
+                </div>
             </article>
 
             <article class="row-1 card-3">
-                <h2>CSS Grid Layout</h2>
+                <h2 class="cardHeader">CSS Grid Layout</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum, voluptate atque minus magnam ipsum numquam odit impedit corrupti dolorem quod eaque facilis corporis provident enim dolorum voluptatibus exercitationem beatae.</p>
-                <pre>
-                    .grid &#123;
-                        display: grid;
-                        width: 100%;
-                        grid-template-columns: repeat(12, 1fr);
-
-                        &#125;
-                </pre>
+                <div class="codeSnip">
+                    <pre>
+                        .grid &#123;
+                            display: grid;
+                            width: 100%;
+                            grid-template-columns: repeat(12, 1fr);
+    
+                            &#125;
+                    </pre>
+                </div>
             </article>
         </section>
 
         <section id="row2">
             <article class="row-2 card-1">
-                <h2>Linear Gradients</h2>
+                <h2 class="cardHeader">Linear Gradients</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt fugiat impedit ullam ipsam accusantium nam animi laboriosam expedita, excepturi facere, ad totam quo accusamus rerum rem et, exercitationem magnam in?</p>
-                <pre>
-                    .linear-gradient-background &#123;
-                        background-image: linear-gradient (
-                                rgba(232, 102, 0.3) 0%
-                                rbga(232, 102, 0.6) 100%
-                            );
-                        
-                        &#125;
-                </pre>
+                <div class="codeSnip">
+                    <pre>
+                        .linear-gradient-background &#123;
+                            background-image: linear-gradient (
+                                    rgba(232, 102, 0.3) 0%
+                                    rbga(232, 102, 0.6) 100%
+                                );
+                            
+                            &#125;
+                    </pre>
+                </div>
             </article>
 
             <article class="row-2 card-2">
-                <h2>Box Transition Glow</h2>
+                <h2 class="cardHeader">Box Transition Glow</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ipsum modi vel non corrupti minus dolore accusantium nam autem beatae quam ut, possimus dolores aliquam molestiae alias quas illum itaque.</p>
-                <pre>
-                    .code-card card-header &#123;
-                        border-radius: 8px;
-                        transition: all 0.5s ease-in-out;
-
+                <div class="codeSnip">
+                    <pre>
+                        .code-card card-header &#123;
+                            border-radius: 8px;
+                            transition: all 0.5s ease-in-out;
+    
+                            &#125;
+    
+                        .code-card:hover,
+                        .code-card:hover .card-header &#123;
+                            box-shadow: inset 0px 0px 8px
+                        rgba(232, 102, 236, 1), 0 0 15px
+                        rgba(232, 102, 236, 1);
+    
                         &#125;
-
-                    .code-card:hover,
-                    .code-card:hover .card-header &#123;
-                        box-shadow: inset 0px 0px 8px
-                    rgba(232, 102, 236, 1), 0 0 15px
-                    rgba(232, 102, 236, 1);
-
-                    &#125;
-                </pre>
+                    </pre>
+                </div>
             </article>
 
             <article class="row-2 card-3">
-                <h2>Overlay Card with Title</h2>
+                <h2 class="cardHeader">Overlay Card with Title</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptas aperiam error quidem numquam earum aliquid alias? Tempora fugit hic minima ducimus ab exercitationem praesentium eos, nostrum dicta ex! Animi.</p>
-                <pre>
-                    .card-header &#123;
-                        position: relative;
-                        margin-top: -20px;
-                </pre>
+                <div class="codeSnip">
+                    <pre>
+                        .card-header &#123;
+                            position: relative;
+                            margin-top: -20px;
+                    </pre>
+                </div>
             </article>
         </section>
     </main>
