@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+/* Variables */
+
+:root {
+--headerTxt: #58ff45;
+--cardBorder: #36d3f3;
+}
+
+/* End Variables */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -27,7 +36,7 @@ h1 {
     font-size: x-large;
     font-weight: 900;
     text-transform: uppercase;
-    color: #36d3f3;
+    color: var(--headerTxt);
 }
 
 .headerCaption {
@@ -40,7 +49,7 @@ h1 {
 
 .card {
     border-style: solid;
-    border-color: #36d3f3;
+    border-color: var(--cardBorder);
     border-width: 5px;
     border-radius: 5px;
     padding: 10px;
@@ -51,24 +60,24 @@ h1 {
 }
 
 .card:hover {
-    box-shadow: 0px 0px 9px;
+    box-shadow: 0px 0px 15px var(--cardBorder);
 }
 
 .cardHeader {
-    border: solid 2px #36d3f3;
+    border: solid 2px var(--cardBorder);
     border-radius: 5px;
     text-align: center;
     position: relative;
     margin-top: -30px;
     padding: 5px;
-    background-color: #767676;
-    color: #58ff45;
+    background-color: hwb(0 46% 54%);
+    color: var(--headerTxt);
     z-index: 2;
     transition: all 0.5s ease-in-out;
 }
 
 .cardHeader:hover {
-    box-shadow: 0px 0px 9px;
+    box-shadow: 0px 0px 15px var(--cardBorder);
 }
 
 .cardDetails {
@@ -80,6 +89,10 @@ h1 {
 
 .codeSnip {
     color: #58ff45;
+    border-radius: 5px;
+    background-image: linear-gradient(
+        to left, rgba(118, 118, 118, 0.5), 50%, rgba(0, 0, 0, 1)
+    );
 }
 
 footer {
