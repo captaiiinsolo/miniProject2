@@ -21,9 +21,10 @@ body {
 }
 
 main {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #siteHeader {
@@ -103,25 +104,4 @@ footer {
     text-align: center;
     margin: 0 auto;
     color: #f3f3f3;
-}
-
-@media screen and (min-width: 992px) {
-    .row-1,
-    .row-2 {
-        width: 33%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .row-1,
-    .row-2 {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .row-1,
-    .row-2 {
-        width: 100%;
-    }
 }
