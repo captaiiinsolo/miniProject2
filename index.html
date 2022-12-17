@@ -21,101 +21,118 @@
     </section>
 
     <main>
-        <section id="row1">
-            <article class="row-1 card-1">
-                <h2 class="cardHeader">Flexbox Row</h2>
-                <p>Use these three properties to create a Flexbox row layout.</p>
-                <div class="codeSnip">
-                    <pre>
-                        .row &#123; 
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: wrap:
-
-                            &#125;
-                    </pre>
-                </div>    
+        <section class="card">
+            <h2 class="cardHeader">Flexbox Row</h2>
+            <p class="cardDetails">Use these three properties to create a Flexbox row layout.</p>
+            <article class="codeSnip">
+                <code>
+                    .row &#123; 
+                    <br>
+                    display: flex; 
+                    <br>
+                    flex-direction: row; 
+                    <br>
+                    flex-wrap: wrap:
+                    <br>
+                    &#125;
+                </code>
             </article>
-
-            <article class="row-1 card-2">
-                <h2 class="cardHeader">Flexbox Column</h2>
-                <p>Use this to create a Flebox collumn layout.</p>
-                <div class="codeSnip">
-                    <pre class="codeSnip">
-                        .column &#123;
-                            display: flex;
-                            flex-direction: column;
-    
-                            &#125;
-                    </pre>
-                </div>
-            </article>
-
-            <article class="row-1 card-3">
-                <h2 class="cardHeader">CSS Grid Layout</h2>
-                <p>Build a 12-colummn using CSS Grid</p>
-                <div class="codeSnip">
-                    <pre>
-                        .grid &#123;
-                            display: grid;
-                            width: 100%;
-                            grid-template-columns: repeat(12, 1fr);
-    
-                            &#125;
-                    </pre>
-                </div>
+        </section>
+        
+        <section class="card">
+            <h2 class="cardHeader">Flexbox Column</h2>
+            <p class="cardDetails">Use this to create a Flebox collumn layout.</p>
+            <article class="codeSnip"></article>
+                <code>
+                .column &#123;
+                <br>
+                display: flex;
+                <br>
+                flex-direction: column;
+                <br>
+                &#125;
+                </code>
             </article>
         </section>
 
-        <section id="row2">
-            <article class="row-2 card-1">
-                <h2 class="cardHeader">Linear Gradients</h2>
-                <p>This will create a background linear gradient from top to bottom.</p>
-                <div class="codeSnip">
-                    <pre>
-                        .linear-gradient-background &#123;
-                            background-image: linear-gradient (
-                                    rgba(232, 102, 0.3) 0%
-                                    rbga(232, 102, 0.6) 100%
-                                );
-                            
-                            &#125;
-                    </pre>
-                </div>
+        <section class="card">
+            <h2 class="cardHeader">CSS Grid Layout</h2>
+            <p class="cardDetails">Build a 12-colummn using CSS Grid</p>
+            <article class="codeSnip"></article>
+                <code>
+                    .grid &#123;
+                    <br>
+                    display: grid;
+                    <br>
+                    width: 100%;
+                    <br>
+                    grid-template-columns: repeat(12, 1fr);
+                    <br>
+                    &#125;
+                </code>
             </article>
+        </section>
 
-            <article class="row-2 card-2">
-                <h2 class="cardHeader">Box Transition Glow</h2>
-                <p>Use transition and box shadows to glow on hover.</p>
-                <div class="codeSnip">
-                    <pre>
+        <section class="card">
+            <h2 class="cardHeader">Linear Gradients</h2>
+            <p class="cardDetails">This will create a background linear gradient from top to bottom.</p>
+            <article class="codeSnip"></article>
+            
+                <code>
+                .linear-gradient-background &#123;
+                <br>
+                background-image: linear-gradient (
+                    <br>
+                        rgba(232, 102, 0.3) 0%
+                        <br>
+                        rbga(232, 102, 0.6) 100%
+                        <br>
+                    );
+                
+                &#125;
+                </code>
+            </article>
+        </section>
+
+        <section class="card">
+            <h2 class="cardHeader">Box Transition Glow</h2>
+            <p class="cardDetails">Use transition and box shadows to glow on hover.</p>
+            <article class="codeSnip">
+                    <code>
                         .code-card card-header &#123;
-                            border-radius: 8px;
-                            transition: all 0.5s ease-in-out;
-    
-                            &#125;
-    
-                        .code-card:hover,
-                        .code-card:hover .card-header &#123;
-                            box-shadow: inset 0px 0px 8px
-                        rgba(232, 102, 236, 1), 0 0 15px
-                        rgba(232, 102, 236, 1);
-    
+                        <br>
+                        border-radius: 8px;
+                        <br>
+                        transition: all 0.5s ease-in-out;
+                        <br>
                         &#125;
-                    </pre>
-                </div>
-            </article>
 
-            <article class="row-2 card-3">
-                <h2 class="cardHeader">Overlay Card with Title</h2>
-                <p>Overlay Card with Title.</p>
-                <div class="codeSnip">
-                    <pre>
-                        .card-header &#123;
-                            position: relative;
-                            margin-top: -20px;
-                    </pre>
-                </div>
+                    .code-card:hover,
+                    <br>
+                    .code-card:hover .card-header &#123;
+                    <br>
+                        box-shadow: inset 0px 0px 8px
+                        <br>
+                    rgba(232, 102, 236, 1), 0 0 15px
+                    <br>
+                    rgba(232, 102, 236, 1);
+                    <br>
+                    &#125;
+                    </code>
+            </article>
+        </section>
+
+        <section class="card">
+            <h2 class="cardHeader">Overlay Card with Title</h2>
+            <p class="cardDetails">Overlay Card with Title.</p>
+            <article class="codeSnip">
+                <code>
+                .card-header &#123;
+                <br>
+                position: relative;
+                <br>
+                margin-top: -20px;
+                </code>
             </article>
         </section>
     </main>
