@@ -8,20 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-}
-
-
-header {
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: x-large;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: rgb(142, 10, 10);
+    background-color: #767676;
 }
 
 main {
@@ -30,38 +17,79 @@ main {
     grid-template-columns: repeat(3, 1fr);
 }
 
+#siteHeader {
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #36d3f3;
+}
+
+.headerCaption {
+    width: 50%;
+    margin: 10px auto;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #f3f3f3;
+}
+
 .card {
-    border-style: dashed;
+    border-style: solid;
+    border-color: #36d3f3;
     border-width: 5px;
+    border-radius: 5px;
     padding: 10px;
     flex: 0 0 400px;
     margin: 20px;
     font-size: larger;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 9px;
 }
 
 .cardHeader {
-    border: solid 2px lightblue;
+    border: solid 2px #36d3f3;
     border-radius: 5px;
     text-align: center;
     position: relative;
     margin-top: -30px;
     padding: 5px;
-    background-color: white;
+    background-color: #767676;
+    color: #58ff45;
     z-index: 2;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardHeader:hover {
+    box-shadow: 0px 0px 9px;
 }
 
 .cardDetails {
     font-size: medium;
     margin: 5px;
     padding: 5px;
+    color: #f3f3f3;
+}
 
+.codeSnip {
+    color: #58ff45;
 }
 
 footer {
-    display: flex;
+    display: block;
     justify-content: center;
     margin: 10px;
     padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+    color: #f3f3f3;
 }
 
 @media screen and (min-width: 992px) {
