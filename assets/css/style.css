@@ -25,9 +25,9 @@ h1 {
 }
 
 main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
@@ -43,8 +43,11 @@ main {
     border: solid 2px lightblue;
     border-radius: 5px;
     text-align: center;
-    margin: 5px;
+    position: relative;
+    margin-top: -30px;
     padding: 5px;
+    background-color: white;
+    z-index: 2;
 }
 
 .cardDetails {
@@ -52,10 +55,6 @@ main {
     margin: 5px;
     padding: 5px;
 
-}
-
-.codeSnip {
-    
 }
 
 footer {
